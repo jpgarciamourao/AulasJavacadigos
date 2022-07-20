@@ -1,0 +1,43 @@
+package aulas;
+
+import java.util.Scanner;
+
+public class EntradaDadosTeclado {
+
+	public static void main(String[] args) {
+		
+		Scanner leia = new Scanner(System.in);
+		
+		String nome;
+		int numero = 0;
+		char sexo;
+		double x = 1010.25;
+		double y = 510.25;
+		
+		System.out.println("Nome do proprietario da conta: ");
+		nome = leia.nextLine(); 
+		
+		System.out.println("Digite o numero da conta: ");
+		numero = leia.nextInt();
+		
+		System.out.println("Sexo: ");
+		sexo = leia.next().charAt(0);
+		
+		System.out.println("O nome digitado foi: " + nome);
+		System.out.println("O numero digitado foi: " + numero);
+		System.out.println("O sexo digitado foi: " + sexo);
+		
+		System.out.println("Saldo disponivel: " + x);
+		
+		System.out.println("Insira um valor para saque: ");
+		x = leia.nextDouble();
+		
+		System.out.println("O valor disponivel na conta: " + y);
+				
+		
+		
+		leia.close();
+	
+	}
+	
+}
